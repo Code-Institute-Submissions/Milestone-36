@@ -1,0 +1,49 @@
+/*-----Universal selector used below as different browsers have different default
+margins resulting in sites looking different by marrgins. All paddings and margins set 
+to zero so they look the same on all browsers (reword)---*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Mukta', sans-serif;
+    color: #000;
+}
+
+/*------Navbar------*/
+
+.navbar {
+    padding: 20px;
+}
+/*----Navbar-List-Items---*/
+
+.nav li {
+    padding-left: 40px;
+}
+/*--Nav-text---*/
+
+.nav-link {
+    font-family: 18px !important;
+}
+
+/*---Carousel---*/
+/*--Image-1280px/604px--*/
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-------Colours---*/
+
+
+
+/*-----Special Paddings/Margins/Texts---*/
+
+
+
