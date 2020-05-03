@@ -2,6 +2,8 @@
 margins resulting in sites looking different by marrgins. All paddings and margins set 
 to zero so they look the same on all browsers (reword)---*/
 
+@import url('https://fonts.googleapis.com/css?family=Orbitron:900|Play:700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -13,31 +15,283 @@ html, body {
     width: 100%;
     font-family: 'Mukta', sans-serif;
     color: #000;
+    margin: 0px;
+}
+/*--Container-Nav and Carousel--*/
+
+.container-fluid {
+padding-right: 0px;
+padding-left: 0px;
 }
 
-/*------Navbar------*/
+/*------Navbar Decoration------*/
+.transparent-nav {
+ background: transparent !important;
+ transition: 0.5s ease-in;
+}
+
+.transparent-nav.scroll {
+    background: #000 !important;
+    opacity: 0.9;
+}
 
 .navbar {
-    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    z-index: 99;
 }
-/*----Navbar-List-Items---*/
 
-.nav li {
-    padding-left: 40px;
+.navbar-brand {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 30px;
 }
-/*--Nav-text---*/
 
-.nav-link {
-    font-family: 18px !important;
+.title {
+font-family: 'Orbitron', sans-serif;
+color: #00e366;
+}
+
+.navbar-nav {
+   font-family: 'Play', sans-serif; 
+   font-size: 22px;
+   color: #fafafa;
+}
+
+.show .navbar-nav > li > a {
+    color: #fafafa !important;
+    background-color: #000 !important;
+    opacity: 0.9;
+}
+
+.transparent-nav a {
+    margin-right: 50px;
+    border-bottom: 2px solid transparent;
+    color: #fafafa !important;
+}
+
+.transparent-nav a:hover {
+    border-bottom: 3px solid #00e366;
+}
+
+.active a {
+    border-bottom: 2px solid #00e366;
+}
+
+/*---Language bar----*/
+.dropdown-menu {
+    background-color: transparent;
+}
+
+.languages a {
+    background-color: transparent;
+    color: #fff !important;
+    box-shadow: 3px 3px 5px #777;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.dropdown-toggle:after {
+    display: inline;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+.dropdown-item:hover {
+    color: #000 !important;
+    background-color: #00e366;
+}
+
+
+
+.dropdown-menu {
+    width: 20px;
+    background-color: #000;
+    opacity: 0.9;
 }
 
 /*---Carousel---*/
-/*--Image-1280px/604px--*/
-.carousel-item img {
-    width: 100%;
-    height: 100%;
+.carousel {
+    margin-top: -100px;
 }
 
+.carousel-caption {
+    margin-bottom: 20%;
+}
+
+.carousel-caption h5 {
+    font-size: 65px;
+    text-transform: uppercase;
+}
+.carousel-caption p {
+    font-size: 30px;
+}
+
+.overlay:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.4;
+}
+/*----Carousel arrows---*/
+.carousel-control-prev {
+    padding-top: 100px;
+}
+
+.carousel-control-next {
+    padding-top: 100px;
+}
+
+/*---Media Queries---*/
+@media only screen and (max-width: 1050px) {
+    .carousel-caption {
+    margin-bottom: 10%;
+}
+}
+
+@media only screen and (max-width: 920px) {
+    .carousel-caption h5 {
+    font-size: 40px;
+}
+    .carousel-caption p {
+    font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 700px) {
+    .btn {
+        display: none;
+    }
+    .carousel-caption h5 {
+        font-size: 30px;
+    }
+    .carousel-caption p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .carousel-caption {
+    margin-bottom: 5%;
+}
+}
+
+
+
+@media only screen and (max-width: 538px) {
+    .carousel-caption h5 {
+    font-size: 20px;
+}
+    .carousel-caption p {
+    font-size: 10px;
+}
+}
+
+@media only screen and (max-width: 460px) {
+    .navbar-brand {
+   padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 447px) {
+    .carousel-caption {
+    margin-bottom: 2%;
+}
+   .carousel-caption h5 {
+    font-size: 10px;
+}
+    .carousel-caption p {
+    font-size: 5px;
+}
+}
+
+@media only screen and (max-width: 430px) {
+    .carousel-control-next {
+    padding-top: 130px;
+}
+    .carousel-control-prev {
+    padding-top: 130px;
+}
+}
+
+@media only screen and (max-width: 391px) {
+    .carousel-caption {
+    margin-bottom: 0%;
+ }
+}
+
+@media only screen and (max-width: 370px) {
+    .carousel-caption {
+     display: none;
+ }
+ .navbar-brand {
+    padding-left: 0px;
+}
+}
+/*---Button on carousel---*/
+.btn-outline-light {
+    border-width: revert;
+}
+.btn {
+    font-size: 20px;
+}
+
+.btn-primary {
+    background-color: green !important;
+    border-color: green !important;
+}
+.btn-primary:hover {
+    background-color: #fafafa;
+    color: #000;
+    border-color: #fafafa;
+}
+
+/*--Jumbotron--*/
+.jumbotron {
+    margin-bottom: 0rem;
+    background-color: #000 !important;
+}
+
+.jumbotron div {
+    background-color: #000;
+}
+
+.resorts-title {
+    font-family: 'Play', sans-serif;
+}
+
+hr {
+      border:none;
+      height:3px;
+      background-color:#00e366;
+      width:200px;
+      margin-left: 40%;
+      margin-bottom: 30px;
+      margin-top: 30px;
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*----Flip Cards/Resorts---*/
+.container {
+    max-width: 100%;
+    padding-top: 15px;
+    background-color: #343a40;
+}
+
+.card-deck {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
 
 /*-------Colours---*/
 
