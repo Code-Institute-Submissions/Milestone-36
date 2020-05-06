@@ -123,9 +123,11 @@ color: #00e366;
 .carousel-caption h5 {
     font-size: 65px;
     text-transform: uppercase;
+    font-family: 'Play', sans-serif; 
 }
 .carousel-caption p {
     font-size: 30px;
+    font-family: 'Play', sans-serif; 
 }
 
 .overlay:after {
@@ -237,6 +239,7 @@ color: #00e366;
 /*---Button on carousel---*/
 .btn-outline-light {
     border-width: revert;
+    font-family: 'Play', sans-serif; 
 }
 .btn {
     font-size: 20px;
@@ -245,6 +248,7 @@ color: #00e366;
 .btn-primary {
     background-color: #000!important;
     border-color: #000 !important;
+    font-family: 'Play', sans-serif; 
 }
 .btn-primary:hover {
     background-color: #fafafa;
@@ -281,6 +285,11 @@ color: #00e366;
     padding-bottom: 30px;
 }
 /*----Six Resorts---*/
+#resorts-header {
+    color: #000;
+    font-family: 'Play', sans-serif;
+}
+
 .resorts {
       border:none;
       height:3px;
@@ -294,7 +303,7 @@ color: #00e366;
 .card-columns {
     padding-left: 30px;
     padding-right: 30px;
-    column-gap: 30px;
+    column-gap: 10px;
 }
 
 .card-body {
@@ -392,10 +401,35 @@ color: #00e366;
     font-family: 'Play', sans-serif;
 }
 
+/*---How it works----*/
+#how-it-works-header {
+    padding-top: 10px;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    font-family: 'Play', sans-serif;
+}
+
+
+
 /*-------Colours---*/
 .card-body {
     background-color: #000;
     color: #fafafa;
+}
+
+#the-process {
+    background-color: #000;
+    color: #fafafa;
+    font-family: 'Play', sans-serif;
+}
+.icon-title {
+    color: #00e366
+}
+/*---Font Awsome styles---*/
+.fas {
+    font-size: 50px;
+    padding-bottom: 25px;
 }
 
 
