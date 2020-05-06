@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" >
-    <title>Après Ski</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Après Ski</title>
 </head>
+
 <body>
-<!---Nav Bar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark transparent-nav fixed-top">
-	<a class="navbar-brand" href="#" style="border-bottom: white;"><h2 class="title">APRÈS SKI</h2></a>
+	<!---Nav Bar-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark transparent-nav fixed-top">
+		<a class="navbar-brand" href="#" style="border-bottom: white;">
+			<h2 class="title">APRÈS SKI</h2>
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -25,7 +31,7 @@
 					<a class="nav-link" href="#">Resorts</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Who are we?</a>
+					<a class="nav-link" href="#">About us</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Book your holiday</a>
@@ -41,140 +47,205 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="#">English</a>
 							<a class="dropdown-item" href="#">Español</a>
-							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
-</nav>
-<!--Carousel slider-->
-<section>
-	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active overlay">
-				<img src="assets/images/bkg2.jpg" class="d-block w-100" alt="...">
-				<div class="carousel-caption d-md-block">
-					<h5>First slide label</h5>
-					<p>Nulla vitae elit libero, a pharetra augue mollis interdum. Praesent commodo cursus magna, vel
-						scelerisque nisl consectetur.</p>
-					<button type="button" class="btn btn-primary btn-lg">Large button</button>
+	</nav>
+	<!--Carousel slider-->
+	<section>
+		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active overlay">
+					<img src="assets/images/bkg2.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-md-block">
+						<h5>First slide label</h5>
+						<p>Nulla vitae elit libero, a pharetra augue mollis interdum. Praesent commodo cursus magna, vel
+							scelerisque nisl consectetur.</p>
+						<button type="button" class="btn btn-primary btn-lg">Large button</button>
+					</div>
+				</div>
+				<div class="carousel-item overlay">
+					<img src="assets/images/bkg6.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-md-block">
+						<h5>Second slide label</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel
+							scelerisque nisl consectetur.</p>
+						<button type="button" class="btn btn-outline-light">Light</button>
+					</div>
+				</div>
+				<div class="carousel-item overlay">
+					<img src="assets/images/bkg5.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-md-block">
+						<h5>Third slide label</h5>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur. Praesent commodo cursus
+							magna,
+							vel scelerisque nisl consectetur.</p>
+						<button type="button" class="btn btn-outline-light">Light</button>
+					</div>
 				</div>
 			</div>
-			<div class="carousel-item overlay">
-				<img src="assets/images/bkg6.jpg" class="d-block w-100" alt="...">
-				<div class="carousel-caption d-md-block">
-					<h5>Second slide label</h5>
+			<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+	<!--Jumbotron/Title for resorts-->
+	<section>
+		<div class="container-fluid">
+			<div class="jumbotron jumbotron-fluid bg-dark">
+				<hr>
+				<div class="container text-center text-white">
+
+					<h1 class="display-4 resorts-title">Fluid jumbotron</h1>
+					<p class="lead resorts-title">This is a modified jumbotron that occupies the entire horizontal space
+						of its
+						parent.</p>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<!--Six Resorts-->
+		<hr class="resorts">
+		<div class="container-fluid">
+			<div class="card-columns">
+				<div class="card card-image1">
+					<div class="card-body card-body1">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional
+							content.</p>
+					</div>
+				</div>
+				<div class="card card-image2">
+					<div class="card-body card-body2">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional
+							content.</p>
+					</div>
+				</div>
+				<div class="card card-image3">
+					<div class="card-body card-body3">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional
+							content.</p>
+					</div>
+				</div>
+				<div class="card card-image4">
+					<div class="card-body card-body4">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional
+							content.</p>
+					</div>
+				</div>
+				<div class="card card-image5">
+					<div class="card-body card-body5">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional
+							content.</p>
+					</div>
+				</div>
+				<div class="card card-image6">
+					<div class="card-body card-body6">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional
+							content.</p>
+					</div>
+				</div>
+			</div>
+			<hr class="resorts">
+	</section>
+	<!--Two Column Section/About us-->
+	<section id="about-us-header">
+		<div class="row text-center">
+			<div class="col">
+
+			</div>
+			<div class="col-6">
+				<h1 class="display-4">About us</h1>
+			</div>
+			<div class="col">
+
+			</div>
+
+		</div>
+	</section>
+	<section id="about-us">
+		<div class="container">
+			<div class="row text-center btns">
+				<div class="col-md-6">
+					<p><a class="btn btn-outline-light" data-toggle="collapse" href="#info1" role="button"
+							aria-expanded="false" aria-controls="info1">Who are we?</a></p>
+				</div>
+				<div class="col-md-6">
+					<p><a class="btn btn-outline-light" data-toggle="collapse" href="#info2" role="button"
+							aria-expanded="false" aria-controls="info2">Why choose us?</a></p>
+				</div>
+			</div>
+			<div class="collapse" id="info1">
+				<div class="card card-body">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel
-						scelerisque nisl consectetur.</p>
-					<button type="button" class="btn btn-outline-light">Light</button>
+						scelerisque nisl consectetur. orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+						commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+						montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+						sem.
+					</p>
 				</div>
 			</div>
-			<div class="carousel-item overlay">
-				<img src="assets/images/bkg5.jpg" class="d-block w-100" alt="...">
-				<div class="carousel-caption d-md-block">
-					<h5>Third slide label</h5>
-					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur. Praesent commodo cursus magna,
-						vel scelerisque nisl consectetur.</p>
-					<button type="button" class="btn btn-outline-light">Light</button>
+			<div class="collapse" id="info2">
+				<div class="card card-body">
+					<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+						arcu.
+						In enim
+						justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+						pretium.
+						Integer
+						tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
+						leo
+						ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+						viverra
+						quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+					</p>
 				</div>
 			</div>
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-</section>
-<!--Jumbotron/Title for resorts-->
-<div class="jumbotron jumbotron-fluid bg-dark" >
- <hr>
-	<div class="container text-center text-white">
-    
-		<h1 class="display-4 resorts-title">Fluid jumbotron</h1>
-		<p class="lead resorts-title">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-	</div>
-    <hr>
-</div>
-<!--three columns Resorts-->
-<hr>
-<div class="card-deck">
-	<div class="card">
-		<img src="assets/images/rs1.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-				Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex
-				ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat
-				nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit
-				anim id est laborum.</p>
+
 
 		</div>
-		
-	</div>
-	<div class="card">
-		<img src="assets/images/rs1.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-				Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex
-				ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat
-				nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit
-				anim id est laborum.</p>
-
 		</div>
-		
-	</div>
-	<div class="card">
-		<img src="assets/images/rs1.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-				Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex
-				ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat
-				nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit
-				anim id est laborum.</p>
+	</section>
+	<!--Fixed Background/How it works-->
 
-		</div>
-		
-	</div>
-</div>
+	<!--Why us---->
 
-<!--Two Column Section/About us-->
+	<!--Book your holiday-->
+	<footer>
+		Footer
+	</footer>
 
-<!--Fixed Background/How it works-->
-
-<!--Why us---->
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script>
-$(window).scroll(function(){
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<script>
+		$(window).scroll(function(){
 	$('nav').toggleClass('scroll', $(this).scrollTop() > 200);
 });
-</script>	
+	</script>
 </body>
 
 </html>
