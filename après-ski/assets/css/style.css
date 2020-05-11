@@ -13,9 +13,13 @@ to zero so they look the same on all browsers (reword)---*/
 html, body {
     height: 100%;
     width: 100%;
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Play', sans-serif;
     color: #000;
     margin: 0px;
+}
+
+section {
+    overflow-x: hidden;
 }
 /*--Container-Nav and Carousel--*/
 
@@ -91,6 +95,11 @@ color: #00e366;
     font-weight: bold;
 }
 
+.fa-globe {
+    font-size: 25px !important;
+    padding-bottom: 5px !important;
+    padding-right: 10px !important;
+}
 
 .dropdown-toggle:after {
     display: inline;
@@ -285,6 +294,19 @@ color: #00e366;
     padding-bottom: 30px;
 }
 /*----Six Resorts---*/
+.rs-icon {
+    padding-top: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+    .rs-icon {
+    display: none;
+ }
+.col-6 {
+    max-width: 60%;
+}
+}
+
 #resorts-header {
     color: #000;
     font-family: 'Play', sans-serif;
@@ -321,7 +343,7 @@ color: #00e366;
 }
 /*----Resort 1----*/
 .card-image1 {
-    background-image: url("../images/pas-de-la-casaX.jpg");
+    background-image: url("../images/prueba.jpg");
     background-size: cover;
     background-position: center;
     border: 0px;
@@ -329,33 +351,33 @@ color: #00e366;
 
 
 .card-image2 {
-    background-image: url("../images/pas-de-la-casaX.jpg");
+    background-image: url("../images/prueba2.jpg");
     background-size: cover;
     background-position: center;
     border: 0px;
 }
 
 .card-image3 {
-    background-image: url("../images/pas-de-la-casaX.jpg");
+    background-image: url("../images/prueba3.jpg");
     background-size: cover;
     background-position: center;
     border: 0px;
 }
 
 .card-image4 {
-    background-image: url("../images/pas-de-la-casaX.jpg");
+    background-image: url("../images/prueba4.jpg");
     background-size: cover;
     background-position: center;
     border: 0px;
 }
 .card-image5 {
-    background-image: url("../images/pas-de-la-casaX.jpg");
+    background-image: url("../images/prueba5.jpg");
     background-size: cover;
     background-position: center;
     border: 0px;
 }
 .card-image6 {
-    background-image: url("../images/pas-de-la-casaX.jpg");
+    background-image: url("../images/prueba6.jpg");
     background-size: cover;
     background-position: center;
     border: 0px;
@@ -390,16 +412,35 @@ color: #00e366;
 }
 /*---Fixed image---*/
 #about-us {
-    background-image: url("../images/about-us-fixed.jpg");
+    background-image: url("../images/fixed-3.jpg");
     background-size: cover;
     background-attachment: fixed;
     min-height: 400px;
+    background-position: center center;
 }
 
 .btns {
     padding-top: 15%;
     font-family: 'Play', sans-serif;
 }
+.in-block {
+    display: block;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .in-block {
+    display: block;
+ }
+}
+
+@media only screen and (max-width: 700px) {
+    .in-block {
+    display: block;
+ }
+}
+
+
 
 /*---How it works----*/
 #how-it-works-header {
@@ -410,7 +451,32 @@ color: #00e366;
     font-family: 'Play', sans-serif;
 }
 
+/*--Book your Holiday--*/
+    #book-holiday {
+    background-image: url("../images/input-bkg.jpg");
+    background-size: cover;
+    min-height: 500px;
+    background-position: center center;
+    filter: brightness(100%);
+    }
 
+.col-md-6:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.col-md-6 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 /*-------Colours---*/
 .card-body {
@@ -426,6 +492,43 @@ color: #00e366;
 .icon-title {
     color: #00e366
 }
+.form-control {
+    background-color: transparent;
+}
+
+.form-control::placeholder {
+    color: #fafafa;
+    opacity: 1;
+}
+.form-control {
+    border: 4px solid #fafafa;
+    color: #fafafa;
+}
+
+label {
+    color: #fafafa;
+}
+
+
+h3 {
+    color: #fafafa;
+}
+
+.input {
+    z-index: 1;
+}
+/*---Contact details----*/
+.contact-details p {
+    border-bottom: 1px solid #fafafa;
+    color: #fafafa;
+}
+
+.contact-details-icons {
+    font-size: 25px !important;
+    padding-right: 10px;
+    color: #000;
+}
+
 /*---Font Awsome styles---*/
 .fas {
     font-size: 50px;
@@ -435,5 +538,29 @@ color: #00e366;
 
 /*-----Special Paddings/Margins/Texts---*/
 
+/*----footer-----*/
 
+.footer-title {
+   padding: 30px 30px 0 30px;
+   font-family: 'Orbitron', sans-serif;
+   color: #fafafa;
+}
 
+.footer {
+    background-color: #000;
+    color: #fafafa;
+}
+
+.copyright {
+    padding-top: 30px;
+}
+
+.footer-icon {
+    font-size: 40px;
+    padding: 20px;
+    color: #fafafa;
+}
+
+.footer-icon:hover {
+    color: #00e366;
+}
