@@ -2,7 +2,7 @@
 margins resulting in sites looking different by marrgins. All paddings and margins set 
 to zero so they look the same on all browsers (reword)---*/
 
-@import url('https://fonts.googleapis.com/css?family=Orbitron:900|Play:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Play&display=swap');
 
 * {
     margin: 0px;
@@ -16,6 +16,10 @@ html, body {
     font-family: 'Play', sans-serif;
     color: #000;
     margin: 0px;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 section {
@@ -32,11 +36,20 @@ padding-left: 0px;
 .transparent-nav {
  background: transparent !important;
  transition: 0.5s ease-in;
+ padding-top: 20px;
+ padding-bottom: 20px;
 }
 
 .transparent-nav.scroll {
-    background: #000 !important;
+    background: #fafafa !important;
     opacity: 1;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #000 !important;
+}
+
+.transparent-nav.scroll a {
+    color: #544c4c !important;
 }
 
 .navbar {
@@ -46,26 +59,27 @@ padding-left: 0px;
 }
 
 .navbar-brand {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 0px;
     padding-left: 30px;
 }
 
 .title {
 font-family: 'Orbitron', sans-serif;
-color: #00e366;
+color: #000;
 }
 
 .navbar-nav {
    font-family: 'Play', sans-serif; 
    font-size: 22px;
-   color: #fafafa;
+   color: #000;
+   text-align: center;
+   padding-right: 40px;
 }
 
-.show .navbar-nav > li > a {
-    color: #fafafa !important;
-    background-color: #000 !important;
-    opacity: 0.9;
+
+.show .navbar-nav > li > a:hover {
+    border-bottom: 2px solid #29f18d;
 }
 
 .transparent-nav a {
@@ -75,49 +89,87 @@ color: #00e366;
 }
 
 .transparent-nav a:hover {
-    border-bottom: 3px solid #00e366;
+    border-bottom: 2px solid #29f18d;
 }
 
 .active a {
-    border-bottom: 2px solid #00e366;
+    border-bottom: 2px solid #29f18d;
 }
 
 /*---Language bar----*/
-.dropdown-menu {
-    background-color: transparent;
+#lang-option {
+    padding-left: 8px;
 }
 
-.languages a {
-    background-color: transparent;
-    color: #fff !important;
-    box-shadow: 3px 3px 5px #777;
-    text-align: center;
-    font-weight: bold;
+.lang-options:hover {
+    border-bottom: solid 2px transparent !important;
+    color: #544c4c !important; 
 }
 
 .fa-globe {
-    font-size: 25px !important;
-    padding-bottom: 5px !important;
-    padding-right: 10px !important;
+    font-size: 20px !important;
+    padding-bottom: 0px !important;
+    padding-right: 5px;
+}
+.lang-icons {
+    padding: 8px;
 }
 
-.dropdown-toggle:after {
+.dropdown-item {
     display: inline;
-    border-right: 0px solid transparent;
-    border-left: 0px solid transparent;
+    padding: 0px;
 }
-
-.dropdown-item:hover {
-    color: #000 !important;
-    background-color: #00e366;
-}
-
-
 
 .dropdown-menu {
-    width: 20px;
-    background-color: #000;
-    opacity: 0.9;
+    text-align: center !important;
+}
+
+/*---Normal nav---*/
+.navbar-dark .navbar-nav .nav-link {
+    color: #544c4c;
+    margin-right: 40px;
+}
+.non-transparent {
+    background-color: #fafafa !important;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.title-standard {
+   font-family: 'Orbitron', sans-serif;
+   color: #000;
+}
+
+.standard-nav a {
+    color: #544c4c !important;
+}
+
+.non-transparent a {
+    border-bottom: 2px solid transparent;
+}
+
+.non-transparent a:hover {
+ border-bottom: 2px solid #29f18d;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.non-transparent .navbar-toggler {
+    background-color: #00000029;
+}
+.ml-5 {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+}
+
+.lang-icons {
+    padding: 5px;
+}
+
+.mx-5 {
+    margin-left: 0rem !important;
 }
 
 /*---Carousel---*/
@@ -139,7 +191,7 @@ color: #00e366;
     font-family: 'Play', sans-serif; 
 }
 
-.overlay:after {
+.overlay::before {
     content: "";
     display: block;
     position: absolute;
@@ -150,6 +202,7 @@ color: #00e366;
     background: #000;
     opacity: 0.4;
 }
+
 /*----Carousel arrows---*/
 .carousel-control-prev {
     padding-top: 100px;
@@ -261,43 +314,47 @@ color: #00e366;
 }
 .btn-primary:hover {
     background-color: #fafafa;
-    color: #00e366;
+    color: #29f18d;
     border-color: #fafafa;
 }
 
 /*--Jumbotron--*/
 .jumbotron {
     margin-bottom: 0rem;
-    background-color: #000 !important;
+    background: #2E0191;
+    background: -webkit-linear-gradient(right, #2E0191, #1F222F) !important;
+    background: -moz-linear-gradient(right, #2E0191, #1F222F) !important;
+    background: linear-gradient(to left, #2E0191, #1F222F) !important;
 }
 
 .jumbotron div {
-    background-color: #000;
+    background: #2E0191;
+    background: -webkit-linear-gradient(right, #2E0191, #1F222F) !important;
+    background: -moz-linear-gradient(right, #2E0191, #1F222F) !important;
+    background: linear-gradient(to left, #2E0191, #1F222F) !important;
 }
 
-.resorts-title {
+.jumbotron-title {
     font-family: 'Play', sans-serif;
+    color: #fafafa;
 }
 
-.jumbotron hr {
-      border:none;
-      height:3px;
-      background-color:#00e366;
-      width: 25%;
-      margin-left: 37.5%;
-      margin-bottom: 30px;
-      margin-top: 30px;
+.jumbotron-para {
+    font-family: 'Play', sans-serif;
+    color: #fafafa;
 }
+
+.text-jumbotron {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important
+}
+
 
 .container {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 /*----Six Resorts---*/
-.rs-icon {
-    padding-top: 40px;
-}
-
 @media only screen and (max-width: 400px) {
     .rs-icon {
     display: none;
@@ -306,16 +363,30 @@ color: #00e366;
     max-width: 60%;
 }
 }
+.text-center {
+    text-align: center !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#resorts {
+   background: #2E0191;
+   background: -webkit-linear-gradient(right, #2E0191, #1F222F);
+   background: -moz-linear-gradient(right, #2E0191, #1F222F);
+   background: linear-gradient(to left, #2E0191, #1F222F);
+   color: #fafafa;
+}
 
 #resorts-header {
-    color: #000;
+    color: #fafafa;
     font-family: 'Play', sans-serif;
+    padding-top: 40px;
 }
 
 .resorts {
       border:none;
       height:3px;
-      background-color:#000;
+      background-color:#fafafa;
       width: 25%;
       margin-left: 37.5%;
       margin-bottom: 30px;
@@ -330,59 +401,83 @@ color: #00e366;
 
 .card-body {
    font-family: 'Play', sans-serif;  
-
 }
 
 .card-title {
     margin-bottom: auto;
-    color: #00e366;
+    color: #29f18d;
 }
 
 .card-columns .card {
     height: 350px;
 }
 /*----Resort 1----*/
-.card-image1 {
-    background-image: url("../images/prueba.jpg");
+
+.card {
     background-size: cover;
     background-position: center;
     border: 0px;
 }
 
-
-.card-image2 {
-    background-image: url("../images/prueba2.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 0px;
+#card1 {
+  background-image: url("../images/prueba.jpg");  
 }
 
-.card-image3 {
-    background-image: url("../images/prueba3.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 0px;
+#card2 {
+  background-image: url("../images/prueba2.jpg");  
 }
 
-.card-image4 {
-    background-image: url("../images/prueba4.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 0px;
-}
-.card-image5 {
-    background-image: url("../images/prueba5.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 0px;
-}
-.card-image6 {
-    background-image: url("../images/prueba6.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 0px;
+#card3 {
+  background-image: url("../images/prueba3.jpg");  
 }
 
+#card4 {
+  background-image: url("../images/prueba4.jpg");  
+}
+
+#card5 {
+  background-image: url("../images/prueba5.jpg");  
+}
+
+#card6 {
+  background-image: url("../images/prueba6.jpg");  
+}
+
+.card:hover .card-image1 {
+    opacity: 0;
+}
+
+.card:hover .card-image2 {
+    opacity: 0;
+}
+
+.card:hover .card-image3 {
+    opacity: 0;
+}
+
+.card:hover .card-image4 {
+    opacity: 0;
+}
+
+.card:hover .card-image5 {
+    opacity: 0;
+}
+
+.card:hover .card-image6 {
+    opacity: 0;
+}
+
+.resort-title {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #fafafa;
+    text-shadow: 10px 0px 30px rgb(0, 0, 0,1);
+    mix-blend-mode: overlay;
+    top: 30%;
+    left: 15%;
+    font-weight: bolder;
+}
 
 .card-body1, .card-body2, .card-body3, .card-body4, .card-body5, .card-body6 {
     background-color: #000;
@@ -400,9 +495,18 @@ color: #00e366;
 }
 
 /*----About section---*/
-#about-us-header {
+#section-header {
   font-family: 'Play', sans-serif;
-  background-color: #000;  
+  background: #2E0191;
+  background: -webkit-linear-gradient(right, #2E0191, #1F222F);
+  background: -moz-linear-gradient(right, #2E0191, #1F222F);
+  background: linear-gradient(to left, #2E0191, #1F222F);
+}
+
+.text-center {
+    text-align: center !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .col-6 h1 {
@@ -453,14 +557,24 @@ color: #00e366;
 
 /*--Book your Holiday--*/
     #book-holiday {
-    background-image: url("../images/input-bkg.jpg");
+    background-image: url("../images/cc3.jpg");
     background-size: cover;
     min-height: 500px;
     background-position: center center;
     filter: brightness(100%);
-    }
+}
 
-.col-md-6:after {
+.book-holiday-title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fafafa;
+}
+    
+.col-md-12 {
+    padding-top: 30px;
+}
+
+.col-md-8:after {
     content: "";
     display: block;
     position: absolute;
@@ -469,28 +583,51 @@ color: #00e366;
     right: 0;
     left: 0;
     background: #000;
-    opacity: 0.2;
+    opacity: 0.6;
     z-index: -1;
 }
 
-.col-md-6 {
+.col-md-4:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.col-md-4, .col-md-8 {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.contact-details-title {
+    padding-bottom: 15px;
+}
+
+.form-group {
+   padding-top: 20px;
 }
 
 /*-------Colours---*/
 .card-body {
-    background-color: #000;
+    background-image: linear-gradient(to left, #414242, #4d5050, #5a5e5e, #676d6d, #747c7c);
     color: #fafafa;
 }
 
 #the-process {
-    background-color: #000;
+    background: #2E0191;
+    background: -webkit-linear-gradient(right, #2E0191, #1F222F);
+    background: -moz-linear-gradient(right, #2E0191, #1F222F);
+    background: linear-gradient(to left, #2E0191, #1F222F);
     color: #fafafa;
     font-family: 'Play', sans-serif;
 }
 .icon-title {
-    color: #00e366
+    color: #29f18d;
 }
 .form-control {
     background-color: transparent;
@@ -506,7 +643,7 @@ color: #00e366;
 }
 
 label {
-    color: #fafafa;
+    color: #29f18d;
 }
 
 
@@ -526,7 +663,7 @@ h3 {
 .contact-details-icons {
     font-size: 25px !important;
     padding-right: 10px;
-    color: #000;
+    color: #29f18d;
 }
 
 /*---Font Awsome styles---*/
@@ -543,12 +680,12 @@ h3 {
 .footer-title {
    padding: 30px 30px 0 30px;
    font-family: 'Orbitron', sans-serif;
-   color: #fafafa;
+   color: #000;
 }
 
 .footer {
-    background-color: #000;
-    color: #fafafa;
+    background-color: #fafafa;
+    color: #544c4c;
 }
 
 .copyright {
@@ -558,9 +695,28 @@ h3 {
 .footer-icon {
     font-size: 40px;
     padding: 20px;
-    color: #fafafa;
+    color: #544c4c;
+    padding-top: 40px;
 }
 
-.footer-icon:hover {
-    color: #00e366;
+.footer-title:hover, .footer-icon:hover {
+    color: #29f18d;
+}
+
+.col-md-3 a {
+    text-decoration: none;
+}
+
+.pp-icon {
+    font-size: 20px;
+    padding-left: 5px;
+    color: #29f18d;
+}
+
+.privacy-policy {
+    font-size: 12px;
+}
+
+.pp-icon:hover {
+   color: #fafafa;
 }
