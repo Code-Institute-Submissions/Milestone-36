@@ -44,7 +44,6 @@ padding-left: 0px;
     background-color: transparent !important;
 }
 
-
 .navbar {
     font-size: large;
     font-weight: bold;
@@ -59,7 +58,7 @@ padding-left: 0px;
 
 .title {
 font-family: 'Orbitron', sans-serif;
-color: #17d0b6;
+color: #e3c139;
 }
 
 .navbar-nav {
@@ -90,7 +89,7 @@ div#navbarNav.navbar-collapse.justify-content-center.ml-5.standard-nav.collapse.
 
 
 .show .navbar-nav > li > a:hover {
-    border-bottom: 2px solid #17d0b6;
+    border-bottom: 2px solid #e3c139;
 }
 
 .transparent-nav a {
@@ -98,11 +97,11 @@ div#navbarNav.navbar-collapse.justify-content-center.ml-5.standard-nav.collapse.
 }
 
 .transparent-nav a:hover {
-    border-bottom: 2px solid #17d0b6;
+    border-bottom: 2px solid #e3c139;
 }
 
 .active a {
-    border-bottom: 2px solid #17d0b6;
+    border-bottom: 2px solid #e3c139;
 }
 
 /*---Language bar----*/
@@ -112,13 +111,17 @@ div#navbarNav.navbar-collapse.justify-content-center.ml-5.standard-nav.collapse.
     font-weight: bold;
 }
 
+.lang-selector {
+    display: inline-block;
+}
+
 .show a {
     color: #fafafa;
 }
 
 .lang-options:hover {
     border-bottom: solid 2px transparent !important;
-    color: #17d0b6 !important; 
+    color: #e3c139 !important; 
 }
 
 .fa-globe {
@@ -153,7 +156,14 @@ a#lang-option.dropdown-item:hover {
     text-decoration: none;
     background-color: transparent;
     border-bottom: 2px solid transparent !important;
-    color: #17d0b6 !important;
+    color: #e3c139 !important;
+}
+
+a#lang-option.dropdown-item.dropdown-normal:hover {
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: 2px solid transparent !important;
+    color: #e3c139 !important;
 }
 
 /*---Normal nav---*/
@@ -180,12 +190,16 @@ a#lang-option.dropdown-item {
     color: #fafafa !important;
 }
 
+a#lang-option.dropdown-item.dropdown-normal {
+    color: #fafafa !important;
+}
+
 .non-transparent a {
     border-bottom: 2px solid transparent;
 }
 
 .non-transparent a:hover {
- border-bottom: 2px solid #17d0b6;
+ border-bottom: 2px solid #e3c139;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -198,6 +212,24 @@ a#lang-option.dropdown-item {
 
 .lang-icons {
     padding: 5px;
+}
+
+.nav-link.esp-nav {
+    margin-right: 10px !important;
+}
+
+@media only screen and (max-width: 991px) {
+.nav-link.esp-nav {
+    margin-right: 40px !important;
+}
+a#lang-option.dropdown-item.dropdown-normal {
+    color: #544c4c !important;
+}
+.dropdown-menu.dropdown-menu-normal.show {
+    background-color: #fafafa !important;
+    background-image: none;
+    border: 1px solid #fafafa;
+}
 }
 
 /*---Carousel---*/
@@ -241,65 +273,88 @@ a#lang-option.dropdown-item {
 }
 
 /*---Media Queries---*/
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1336px) {
     .carousel-caption {
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+    }
+    }
+
+@media only screen and (max-width: 1200px) {
+    .carousel-caption h5 {
+    font-size: 50px;
+    }
+    
+    .carousel-caption {
+    margin-bottom: 3%;
 }
+   .nav-item {
+    padding-left: 0px;
+}
+    .navbar-nav {
+       padding-right: 0px;
+   }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1024px) {
+    .carousel-caption {
+    margin-bottom: 15%;
+}
     .carousel-caption h5 {
-    font-size: 40px;
+    font-size: 25px;
 }
     .carousel-caption p {
     font-size: 20px;
 }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     .btn {
         display: none;
     }
-    .carousel-caption h5 {
-        font-size: 30px;
-    }
-    .carousel-caption p {
-        font-size: 15px;
-    }
+     .carousel-control-next {
+    padding-top: 170px;
 }
-
-@media only screen and (max-width: 595px) {
+    .carousel-control-prev {
+    padding-top: 170px;
+}
     .carousel-caption {
-    margin-bottom: 5%;
+    margin-bottom: 15%;
+    padding-bottom: 0px;
 }
-}
-
-
-
-@media only screen and (max-width: 538px) {
     .carousel-caption h5 {
-    font-size: 20px;
+    font-size: 19px;
 }
     .carousel-caption p {
-    font-size: 10px;
+    font-size: 18px;
 }
-}
-
-@media only screen and (max-width: 460px) {
     .navbar-brand {
-   padding-top: 0px;
-  }
+    padding-top: 0px;
+}
 }
 
-@media only screen and (max-width: 447px) {
+@media only screen and (max-width: 751px) {
     .carousel-caption {
-    margin-bottom: 2%;
+     margin-bottom: 8%;
 }
-   .carousel-caption h5 {
+}
+
+@media only screen and (max-width: 530px) {
+    .carousel-caption {
+     margin-bottom: 3%;
+}
+}
+
+
+
+@media only screen and (max-width: 481px) {
+    .carousel-caption h5 {
     font-size: 10px;
 }
     .carousel-caption p {
-    font-size: 5px;
+    font-size: 10px;
+}
+   .carousel-caption {
+     margin-bottom: 5%;
 }
 }
 
@@ -310,15 +365,22 @@ a#lang-option.dropdown-item {
     .carousel-control-prev {
     padding-top: 130px;
 }
+    .carousel-indicators {
+        display: none;
+}
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.transparent-nav.fixed-top {
+        padding-top: 8px;
+    }
+       .carousel-caption {
+     margin-bottom: 0%;
+}
+     .title {
+         font-size: 1.75rem;
+     }
 }
 
-@media only screen and (max-width: 391px) {
-    .carousel-caption {
-    margin-bottom: 0%;
- }
-}
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 359px) {
     .carousel-caption {
      display: none;
  }
@@ -342,7 +404,7 @@ a#lang-option.dropdown-item {
 }
 .btn-primary:hover {
     background-color: #fafafa;
-    color: #17d0b6;
+    color: #e3c139;
     border-color: #fafafa;
 }
 
@@ -364,17 +426,18 @@ a#lang-option.dropdown-item {
 
 .jumbotron-title {
     font-family: 'Play', sans-serif;
-    color: #fafafa;
+    color: #e3c139;
 }
 
 .jumbotron-para {
     font-family: 'Play', sans-serif;
     color: #fafafa;
+    font-size: 1.5rem;
 }
 
 .text-jumbotron {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important
+    padding-top: 0px !important;
+    padding-bottom: 0px !important
 }
 
 
@@ -382,7 +445,28 @@ a#lang-option.dropdown-item {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-/*----Six Resorts---*/
+
+/*Jumbotron media queries*/
+
+@media only screen and (max-width: 768px) {
+    .display-4 {
+    font-size: 3rem;
+}
+.jumbotron-para {
+    font-size: 1.25rem;
+}
+}
+
+@media only screen and (max-width: 480px) {
+    .display-4 {
+    font-size: 1.5rem;
+}
+.jumbotron-para {
+    font-size: 1rem;
+}
+}
+
+/*----Six Resorts---
 @media only screen and (max-width: 400px) {
     .rs-icon {
     display: none;
@@ -391,6 +475,7 @@ a#lang-option.dropdown-item {
     max-width: 60%;
 }
 }
+*/
 .text-center {
     text-align: center !important;
     padding-top: 10px;
@@ -431,9 +516,18 @@ a#lang-option.dropdown-item {
    font-family: 'Play', sans-serif;  
 }
 
+.card-text {
+    font-size: 14px;
+}
+
 .card-title {
     margin-bottom: auto;
-    color: #17d0b6;
+    color: #e3c139;
+    font-weight: bolder;
+}
+
+h5.card-title {
+    padding-bottom: 2px;
 }
 
 .card-columns .card {
@@ -495,6 +589,49 @@ a#lang-option.dropdown-item {
     opacity: 0;
 }
 
+.card {
+    word-wrap: normal;
+}
+
+div.card-image1.overlay.container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+div.card-image2.overlay.container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+div.card-image3.overlay.container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+div.card-image4.overlay.container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+div.card-image5.overlay.container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+div.card-image6.overlay.container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+p.resort-title.text-center {
+   right: 65px; 
+}
+
+p.resort-title2.text-center {
+   right: 0px; 
+}
+
+
 .resort-title {
     position: absolute;
     text-transform: uppercase;
@@ -503,9 +640,67 @@ a#lang-option.dropdown-item {
     text-shadow: 10px 0px 30px rgb(0, 0, 0,1);
     mix-blend-mode: overlay;
     top: 30%;
-    left: 15%;
     font-weight: bolder;
 }
+
+.resort-title2 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #fafafa;
+    text-shadow: 10px 0px 30px rgb(0, 0, 0,1);
+    mix-blend-mode: overlay;
+    top: 15%;
+    font-weight: bolder;
+}
+
+.resort-title3 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #fafafa;
+    text-shadow: 10px 0px 30px rgb(0, 0, 0,1);
+    mix-blend-mode: overlay;
+    top: 30%;
+    font-weight: bolder;
+}
+
+.resort-title4 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #fafafa;
+    text-shadow: 10px 0px 30px rgb(0, 0, 0,1);
+    mix-blend-mode: overlay;
+    top: 15%;
+    font-weight: bolder;
+}
+
+.resort-title5 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #fafafa;
+    text-shadow: 10px 0px 30px rgb(0, 0, 0,1);
+    mix-blend-mode: overlay;
+    top: 30%;
+    font-weight: bolder;
+    margin-left: 100px;
+}
+
+.resort-title6 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #fafafa;
+    text-shadow: 10px 0px 30px rgb(0, 0, 0,1);
+    mix-blend-mode: overlay;
+    top: 30%;
+    font-weight: bolder;
+    left: 0px;
+    margin-left: 40px;
+}
+
 
 .card-body1, .card-body2, .card-body3, .card-body4, .card-body5, .card-body6 {
     background-color: #000;
@@ -524,74 +719,315 @@ a#lang-option.dropdown-item {
 
 /*---Resort Media queries----*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1336px) {
     .resort-title {
-    left: 15%;
-	font-size: 55px;
+    left: 50px;
+    font-size: 35px;
+    }
+    .resort-title2 {
+        font-size: 35px;
+        margin-left: 50px;
+        margin-right: 50px;
+        top: 35%;
+    }
+    .resort-title3 {
+        font-size: 35px;
+        margin-left: 100px;
+        margin-right: 100px;
+        top: 20%;
+    }
+    .resort-title4 {
+        font-size: 35px;
+        margin-left: 80px;
+        margin-right: 80px;
+        top: 35%;
+    }
+    .resort-title5 {
+        font-size: 35px;
+        margin-right: 130px;
+        margin-left: 130px;
+    }
+	 .resort-title6 {
+         font-size: 35px;
+         margin-left: 110px;
+         margin-right: 110px;
+     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .resort-title6 {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
-    .resort-title {
-    left: 15%;
-    font-size: 48px;
-}
+    .resort-title3 {
+        top: 30%
+    }
+    .resort-title5 {
+        margin-left: 110px;
+        margin-right: 110px;
+    }
 }
 
-@media only screen and (max-width: 888px) {
-    .resort-title {
-    left: 13%;
-    font-size: 44px;
+@media only screen and (max-width: 982px) {
+    .resort-title3 {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .resort-title4 {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+    .resort-title5 {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    .resort-title6 {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
 }
+
+@media only screen and (max-width: 870px) {
+    .resort-title3 {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .resort-title4 {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .resort-title5 {
+        margin-left: 60px;
+        margin-right: 60px;
+        top: 40%;
+    }
+    .resort-title6 {
+        margin-left: 40px;
+        margin-right: 40px;
+        top: 40%;
+    }
+    .resort-title {
+        top: 40%;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    .resort-title6 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+    @media only screen and (max-width: 769px) {
+    .resort-title {
+    left: 50px;
+    font-size: 25px;
+    }
+    .resort-title2 {
+        font-size: 25px;
+        
+    }
+    .resort-title3 {
+        font-size: 25px;
+        margin-left: 30px;
+        margin-right: 30px;
+        top: 40%;
+    }
+    .resort-title4 {
+        font-size: 25px;
+    }
+    .resort-title5 {
+        font-size: 25px;
+    }
+	 .resort-title6 {
+         font-size: 25px;
+         margin-left: 40px;
+         margin-right: 40px;
+     }
+    }
+
+     @media only screen and (max-width: 639px) {
+         .resort-title {
+            left: 35px;
+         }
+         .resort-title4 {
+            margin-left: 30px;
+            margin-right: 30px;
+         }
+         .resort-title5 {
+             margin-left: 40px;
+             margin-right: 40px;
+         }
+         .resort-title6 {
+           margin-left: 30px;
+           margin-right: 30px;
+         }
+     }
+
+     @media only screen and (max-width: 575px) {
+    .resort-title {
+      left: 50px;
+      font-size: 60px;
+      top: 30%;
+    }
+    .resort-title2 {
+        font-size: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        top: 25%;
+    }
+    .resort-title3 {
+        font-size: 60px;
+        margin-left: 100px;
+        margin-right: 100px;
+        top: 20%;
+    }
+    .resort-title4 {
+        font-size: 60px;
+        margin-left: 80px;
+        margin-right: 80px;
+        top: 25%;
+    }
+    .resort-title5 {
+        font-size: 60px;
+        margin-right: 135px;
+        margin-left: 135px;
+        top: 30%;
+    }
+	 .resort-title6 {
+         font-size: 60px;
+         margin-left: 90px;
+         margin-right: 90px;
+         top: 30%;
+     }
+}
+
+ @media only screen and (max-width: 481px) {
+     .resort-title {
+         font-size: 40px;
+     }
+     .resort-title2 {
+         font-size: 40px;
+         margin-left: 60px;
+         margin-right: 60px;
+     }
+     .resort-title3 {
+        font-size: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
+        top: 30%;
+     }
+     .resort-title4 {
+         font-size: 40px;
+     }
+     .resort-title5 {
+        font-size: 40px;
+     }
+     .resort-title6 {
+       font-size: 40px;
+       margin-left: 100px;
+       margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .resort-title5 {
+        margin-left: 120px;
+        margin-right: 120px;
+     }
+     .resort-title6 {
+       margin-left: 80px;
+       margin-right: 80px;
+    }
+} 
+
+ @media only screen and (max-width: 388px) {
+     .resort-title {
+         font-size: 30px;
+         top: 40%;
+     }
+     .resort-title2 {
+         font-size: 30px;
+     }
+     .resort-title3 {
+        font-size: 30px;
+     }
+     .resort-title4 {
+         font-size: 30px;
+     }
+     .resort-title5 {
+        font-size: 30px;
+        margin-left: 110px;
+        margin-right: 110px;
+        top: 40%;
+     }
+     .resort-title6 {
+       font-size: 30px;
+       top: 40%;
+    }
+}
+
+@media only screen and (max-width: 358px) {
+        .resort-title4 {
+        margin-right: 65px;
+        margin-left: 65px;
+        top: 30%;
+     }
+     .resort-title5 {
+        margin-left: 80px;
+        margin-right: 80px;
+        top: 30%;
+     }
+     .resort-title6 {
+       margin-left: 50px;
+       margin-right: 50px;
+       top: 30%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .card-text {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .card-text {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 924px) {
+    .card-text {
+        font-size: 11px;
+    }
 }
 
 @media only screen and (max-width: 769px) {
-    .resort-title {
-    left: 13%;
-    font-size: 38px;
-}
+    .card-text {
+        font-size: 10px;
+    }
 }
 
-@media only screen and (max-width: 691px) {
-    .resort-title {
-    left: 15%;
-    font-size: 30px;
-}
+@media only screen and (max-width: 720px) {
+    .card-text {
+        font-size: 9px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
-    .resort-title {
-    left: 16%;
-    font-size: 75px;
-}
+    .card-text {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 481px) {
-    .resort-title {
-    left: 16%;
-    font-size: 60px;
-}
-}
-
-@media only screen and (max-width: 423px) {
-    .resort-title {
-    left: 19%;
-    font-size: 45px;
-}
-}
-
-@media only screen and (max-width: 345px) {
-    .resort-title {
-    left: 16%;
-    font-size: 45px;
-}
-}
-
-@media only screen and (max-width: 320px) {
-    .resort-title {
-    left: 12%;
-    font-size: 45px;
-}
+    .card-text {
+        font-size: 12px;
+    }
 }
 
 /*----About section---*/
@@ -733,7 +1169,7 @@ a#lang-option.dropdown-item {
     font-family: 'Play', sans-serif;
 }
 .icon-title {
-    color: #17d0b6;
+    color: #e3c139;
     font-weight: bold;
 }
 
@@ -751,7 +1187,7 @@ a#lang-option.dropdown-item {
 }
 
 label {
-    color: #17d0b6;
+    color: #e3c139;
 }
 
 
@@ -771,7 +1207,7 @@ h3 {
 .contact-details-icons {
     font-size: 25px !important;
     padding-right: 10px;
-    color: #17d0b6
+    color: #e3c139
 }
 
 /*---Font Awsome styles---*/
@@ -808,7 +1244,7 @@ h3 {
 }
 
 .footer-title:hover, .footer-icon:hover {
-    color: #17d0b6;
+    color: #e3c139;
 }
 
 .col-md-3 a {
@@ -818,7 +1254,7 @@ h3 {
 .pp-icon {
     font-size: 20px;
     padding-left: 5px;
-    color: #17d0b6;
+    color: #e3c139;
 }
 
 .privacy-policy {
