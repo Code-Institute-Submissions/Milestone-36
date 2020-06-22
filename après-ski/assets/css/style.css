@@ -27,6 +27,9 @@ section {
 
 }
 
+footer {
+    overflow-x: hidden;
+}
 p {
    margin-bottom: 0rem;
 }
@@ -71,7 +74,7 @@ color: #e3c139;
    font-family: 'Play', sans-serif; 
    font-size: 22px;
    text-align: center;
-   padding-right: 40px;
+   padding-right: 30px;
 }
 a.nav-link {
     font-family: 'Play', sans-serif;
@@ -487,16 +490,6 @@ a#lang-option.dropdown-item.dropdown-normal {
 }
 }
 
-/*----Six Resorts---
-@media only screen and (max-width: 400px) {
-    .rs-icon {
-    display: none;
- }
-.col-6 {
-    max-width: 60%;
-}
-}
-*/
 .text-center {
     text-align: center !important;
     padding-top: 10px;
