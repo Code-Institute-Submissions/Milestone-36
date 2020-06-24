@@ -357,4 +357,4 @@ Please note, I have differentiated between code that was directly used from an e
 
 * *Juliana Stefania Moya Guaje* Thank you for your helping reviewing and editing the resort content.
 
-* *Elisa Videl* Thank you for your helping reviewing and editing the website content.
+* *Elisa Vidal* Thank you for your helping reviewing and editing the website content.
