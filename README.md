@@ -305,7 +305,7 @@ Please note, I have differentiated between code that was directly used from an e
 *	The idea of the navigation bar over an image was taken from 
 (https://www.w3schools.com/howto/howto_css_navbar_image.asp).
 
-*	The code for the navigation bar was taken from (getbootstrap.com/docs/4.5/components/navbar/).
+*	The code for the navigation bar was taken from (https://getbootstrap.com/docs/4.5/components/navbar/).
 
 *	The idea for the Semi-transparent navbar was taken from 
 (https://www.youtube.com/watch?v=LytVxCGtRSw).
