@@ -1058,6 +1058,31 @@ p.resort-title2.text-center {
     padding-top: 35px;
     padding-bottom: 35px;
 }
+
+.info-title {
+    margin-top: 15px;
+}
+
+.container.about-us-questions.text-center {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #000;
+    opacity: 0.6;
+    color: #fafafa;
+}
+
+.col-md-6 h5 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.col-md-6 p {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
 /*---Fixed image---*/
 #about-us {
     background-image: url("../images/fixed-3.jpg");
@@ -1080,7 +1105,7 @@ p.resort-title2.text-center {
     border-right: 2px solid;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .in-block {
     display: block;
  }
@@ -1096,29 +1121,11 @@ p.resort-title2.text-center {
     display: block;
  }
 }
-.container.about-us-questions.text-center {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    background-color: #000;
-    opacity: 0.6;
-    color: #fafafa;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.col-md-6 h5 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.col-md-6 p {
-    font-size: 17px;
-    font-weight: bold;
-}
 
 @media only screen and (max-width: 480px){
     .col-md-6 h5 {
         font-size: 25px;
+        margin-top: 20px;
     }
     .col-md-6 p {
         font-size: 14px;
