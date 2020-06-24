@@ -21,7 +21,7 @@ The main aim of Après Ski is to offer university students package holidays at t
 
 
 ## __UX__
-#
+
 __Who this website is for?__
 
 This website is aimed at university students in Spain and the United Kingdom interested in finding affordable Skiing and Snowboarding holidays. 
@@ -76,7 +76,7 @@ Below are the links to the website wireframes. All wireframes were created using
 
 
 ## __Features__
-#
+
 As mentioned in the previous section, this website contains several features which are aimed at enhancing the user’s experience.
 
 __Existing Features__
@@ -97,7 +97,7 @@ __Existing Features__
 *	*Footer* – At the bottom of each page of the website, the footer consists of social media icon links, the address of the provider and the privacy policy, terms and conditions and data security policy. Here the user can access the provider Après Ski’s other social media accounts just by clicking on the different icons available. In this section the user can download in a new tap in all screen sizes the privacy policy, terms & conditions and data security policy just by clicking on the different links presented.
 
 ## __Technologies Used__
-#
+
 
 Below is a list of languages, frameworks, Integrated Development Environment, Software Development Platforms and other tools used to construct the website in this project.
 
@@ -156,7 +156,7 @@ __Other Tools:__
        A free online tool providing helps clean up messy style sheet code and helps with the formatting.
 
 ## __Testing__
-#
+
 
 The following Web Development tools were used for this project for testing, debugging and optimising different variation of CSS. The Web Developer tools were also used to view the layout and structure of the website through different devices and to test the behaviour of the website on standard screen sizes to cover all media devices.
 *	Chrome Developer Tools
@@ -174,7 +174,6 @@ This website has been tested on the following devices:
 *	iPad Pro
 
 ## __User stories__
-#
 
 In this section, we will go over all of the user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
@@ -245,7 +244,6 @@ All the minor issues which did occur could have been avoid but due to my lack of
 An example of this was the media queries on the resorts page. They were originally based on the text in the English version of the website. So, on smaller screens the font size was reduced enabling it to fit inside the card body. However, as Spanish sentences naturally are longer the media queries set out for the English version were not sufficient for keeping the text inside the card body in the Spanish version. This meant that I had to redo all the media queries for this page based on the Spanish version. This was a process that was continued through the rest of the website.
 
 ## __Deployment__
-#
 
 The project was developed with the use of Gitpod’s Intergraded Development Environment. All developments and changes made to the project were saved and pushed to an external repository stated below using GitHub. This eliminates the risk of deleting a key component of the project by accident as all steps can be reversed thus undoing any unwanted changes made. 
 
@@ -265,26 +263,7 @@ https://github.com/ElJefe111944/Milestone-1.
 https://ElJefe111944.github.io/Milestone-1.
 
 
-Running this project locally:
-1.	Go to the repository created from my GitHub account called below:
-https://github.com/ElJefe111944/Milestone-1.
-
-2.	Click on the green drop down labelled “clone or download” located under the repository name.
-
-3.	Copy the clone URL in the Clone with HTTPs section.
-
-4.	Open the terminal in your IDE (Integrated Development Environment).
-
-5.	Change the working directory to the location you want the clone to be made.
-
-6.	Type git clone and paste the copied URL from step 3.
-
-7.	Then press enter to create your local clone.
-
-There is no difference between either the deployed version of the project or the developed version.
-
 ## __Credits__
-#
 
 __Content:__
 
