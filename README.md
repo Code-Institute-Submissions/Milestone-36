@@ -139,20 +139,19 @@ __Other Tools:__
 
       The vast library of icons available from font awesome are used throughout this project to compliment texts and links making the design clearer and more concise. 
 
-   * __Pixlr__ (https://pixlr.com/x/)
+  * __Pixlr__ (https://pixlr.com/x/)
 	
        The photos used in this project have been edited using the online photo editor PIXLR.
 
+  * __Google Fonts__ (https://fonts.google.com/)
 
-    * __Google Fonts__ (https://fonts.google.com/)
+       The online library of licensed fonts was used in this project.
 
-	   The online library of licensed fonts was used in this project.
-
-    * __Balsamiq__ (https://balsamiq.com/)
+  * __Balsamiq__ (https://balsamiq.com/)
 
       The industry standard wireframing tool was used at the start of this project to design and skeleton plan of each of the pages in this website on both desktop and mobile views.
 
-     * __CSS Beautifier__ (https://www.cleancss.com/css-beautify/)
+  * __CSS Beautifier__ (https://www.cleancss.com/css-beautify/)
 
        A free online tool providing helps clean up messy style sheet code and helps with the formatting.
 
